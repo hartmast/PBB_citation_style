@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <style class="in-text" version="1.0" page-range-format="expanded" default-locale="de-DE" xmlns="http://purl.org/net/xbiblio/csl">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>Beiträge zur Geschichte der deutschen Sprache und Literatur (PBB) [beta]</title>
     <title-short>PBB</title-short>
@@ -13,7 +12,7 @@
     </author>
     <category citation-format="author-date"/>
     <category field="linguistics"/>
-    <updated>2019-07-13T10:45:42+00:00</updated>
+    <updated>2019-07-13T13:26:59+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License. It is based on Mark Dingemanse et al.'s CSL sheet implementing the Unified Style Sheet for Linguistics, which is distributed under the same license.</rights>
   </info>
   <locale>
@@ -30,7 +29,6 @@
       <term name="et-al"> [u.a.]</term>
     </terms>
   </locale>
-  <macro name="secondary-contributors"/>
   <macro name="container-contributors">
     <choose>
       <if type="chapter paper-conference" match="any">
@@ -60,11 +58,6 @@
     <names variable="editor">
       <name and="text" et-al-min="3" et-al-use-first="1" name-as-sort-order="first"/>
       <label form="short" prefix=" (" suffix=")"/>
-      <substitute>
-        <names>
-          <name et-al-min="3" et-al-use-first="1"/>
-        </names>
-      </substitute>
     </names>
   </macro>
   <macro name="translator">
@@ -103,15 +96,6 @@
           </if>
           <else>
             <text term="editor"/>
-            <names>
-              <name and="text"/>
-              <label prefix="(" suffix=")"/>
-              <substitute>
-                <names>
-                  <name et-al-min="3" et-al-use-first="1"/>
-                </names>
-              </substitute>
-            </names>
           </else>
         </choose>
       </substitute>
@@ -423,7 +407,6 @@
         <text macro="date" suffix=":"/>
         <text macro="title" strip-periods="true"/>
         <text macro="description"/>
-        <text macro="secondary-contributors"/>
         <group>
           <group delimiter=". ">
             <group delimiter=". ">
